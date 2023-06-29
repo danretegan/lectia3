@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Lectia3</title>
+    </head>
+<body>
+    <h1>Introducere în CSS</h1>
+    <h2>Sintaxă</h2>
+    <p>Un bloc de cod CSS se numește o regulă, care constă dintr-un selector și un grup de anunțuri între acolade.
+    </p>
+
+    <h2>Conectarea stilurilor</h2>
+    <p>Există trei moduri de a adăuga stiluri la un document HTML: stiluri de tip inline (inline styles), stiluri încorporate (embedded stylesheet) și stiluri externe (external stylesheet). Fiecare metodă are avantaje, dezavantaje, limitări și un domeniu de aplicare.
+    </p>
+
+        <h3>Stiluri de tip inline:</h3>
+    <p style="color:blue; font-size:24px;">Acest text va fi albastru.</p>
+
+        <h3>Stiluri încorporate:</h3>
+    <!-- 
+    <head>
+        <style type="text/css">
+            p {
+            color: blue;
+            font-size: 24px;
+            }
+        </style>
+    </head> -->
+
+        <h3>Stiluri externe</h3>
+
+        <h2>Selectori</h2>
+
+        <h3>Selectorul de element (tag)</h3>
+
+        <h3>Selectorul de clasă</h3>
+
+<h1 class="title">Salut, sunt Mango.</h1>
+<p class="text">
+  Bun venit pe pagina mea personală. Aici puteți găsi
+  <a class="link" href="">proiecte</a>.
+</p>
+
+<h3>Compoziția clasei</h3>
+<p class="alert success">Reîncărcarea contului a fost finalizată</p>
+<p class="alert warning">Atenție, tarifele se vor schimba</p>
+<p class="alert error">Eroare tranzacție</p>
+
+<!-- Selectorul de ID -->
+<h3>Selectorul de ID</h3>
+<h1 id="title">Titlul paginii</h1>
+
+<h3>Selectorul descendent</h3>
+<a href="">Citiți blogul nostru!</a>
+
+<ul class="social-links">
+  <li>
+    <a href="">Twitter</a>
+  </li>
+  <li>
+    <a href="">Instagram</a>
+  </li>
+  <li>
+    <a href="">Facebook</a>
+  </li>
+</ul>
+
+<h3>Selectorul de copil</h3>
+<ul class="menu">
+    <li>
+      Calculatoare și accesorii
+      <ul class="submenu">
+        <li>Procesoare</li>
+        <li>Monitoare</li>
+        <li>Plăci video</li>
+      </ul>
+    </li>
+    <li>
+      Aparate electrocasnice
+      <ul class="submenu">
+        <li>Frigidere</li>
+        <li>Televizoare</li>
+        <li>Mașini de spălat</li>
+      </ul>
+    </li>
+    <li>
+      Produse de uz casnic
+      <ul class="submenu">
+        <li>Fotolii</li>
+        <li>Saltele</li>
+        <li>Șemineuri electrice</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Selectorul de atribut</h2>
+  <h3>element[atribut]</h3>
+  <a href="https://htmlreference.io" title="Referință pentru tag-uri">
+    htmlreference.io
+  </a>
+  
+  <a href="https://cssreference.io" title="Referință pentru stiluri">
+    cssreference.io
+  </a>
+  
+  <a href="https://www.youtube.com">YouTube </a>
+
+  <h3>element[atribut="valoare"]</h3>
+  <a href="https://htmlreference.io" title="Referință pentru tag-uri">
+    htmlreference.io
+  </a>
+  
+  <a href="https://cssreference.io" title="Referință pentru stiluri">
+    cssreference.io
+  </a>
+  
+  <a href="https://www.youtube.com">YouTube</a>
+
+
+  <h2>Pseudo-clase de stare</h2>
+  <!-- Pseudo-clasa :hover :focus :active :visited -->
+<h3>Pseudo-clasa :hover :focus :active :visited</h3>
+<p>
+    Puteți găsi referințe grozave,
+    <a class="link" href="https://htmlreference.io">accesând link-ul</a>.
+  </p>
+
+  <ul class="social-links">
+    <li><a class="link" href="https://twitter.com">Twitter</a></li>
+    <li><a class="link" href="https://www.instagram.com">Instagram</a></li>
+    <li><a class="link" href="https://www.facebook.com">Facebook</a></li>
+  </ul>
+
+  <!-- Hover și tabele -->
+  <h3>Hover și tabele</h3>
+  <table class="schedule">
+    <thead>
+      <tr>
+        <th>Număr</th>
+        <th>Traseu</th>
+        <th>Timp de călătorie</th>
+      </tr>
+    </thead>
+  
+    <tbody class="schedule-body">
+      <tr>
+        <td>433</td>
+        <td>Kiev - Kovel</td>
+        <td>5 ore</td>
+      </tr>
+      <tr>
+        <td>701</td>
+        <td>Harkov - Dnipro</td>
+        <td>7 ore</td>
+      </tr>
+      <tr>
+        <td>258</td>
+        <td>Lvov - Odessa</td>
+        <td>4 ore</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Proprietatea cursor -->
+  <h3>Proprietatea cursor</h3>
+  <h1><code>cursor</code> property values</h1>
+
+<div class="cursors">
+  <div class="auto">auto</div>
+  <div class="default">default</div>
+  <div class="none">none</div>
+  <div class="context-menu">context-menu</div>
+  <div class="help">help</div>
+  <div class="pointer">pointer</div>
+  <div class="progress">progress</div>
+  <div class="wait">wait</div>
+  <div class="cell">cell</div>
+  <div class="crosshair">crosshair</div>
+  <div class="text">text</div>
+  <div class="vertical-text">vertical-text</div>
+  <div class="alias">alias</div>
+  <div class="copy">copy</div>
+  <div class="move">move</div>
+  <div class="no-drop">no-drop</div>
+  <div class="not-allowed">not-allowed</div>
+  <div class="all-scroll">all-scroll</div>
+  <div class="col-resize">col-resize</div>
+  <div class="row-resize">row-resize</div>
+  <div class="n-resize">n-resize</div>
+  <div class="s-resize">s-resize</div>
+  <div class="e-resize">e-resize</div>
+  <div class="w-resize">w-resize</div>
+  <div class="ns-resize">ns-resize</div>
+  <div class="ew-resize">ew-resize</div>
+  <div class="ne-resize">ne-resize</div>
+  <div class="nw-resize">nw-resize</div>
+  <div class="se-resize">se-resize</div>
+  <div class="sw-resize">sw-resize</div>
+  <div class="nesw-resize">nesw-resize</div>
+  <div class="nwse-resize">nwse-resize</div>
+</div>
+
+<!-- Lucrul cu culoarea -->
+ <h2>Lucrul cu culoarea</h2>
+<h3>Culoarea textului</h3>
+<p class="text">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+  veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+  cumque fuga facere labore quo id necessitatibus quaerat rerum.
+</p>
+
+<h3>Culoarea de fundal</h3>
+<p class="text">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+  veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+  cumque fuga facere labore quo id necessitatibus quaerat rerum.
+</p>
+
+<h3>Nume de culori</h3>
+<a href="https://htmlcolorcodes.com/color-names/">COLOR NAMES</a>
+
+<h3>Transparența culorii</h3>
+rgba(roșu, verde, albastru, alfa)
+
+<!-- Cascada stilurilor -->
+ <h2>Cascada stilurilor</h2>
+<h3>Specificitatea selectorului</h3>
+
+<!-- Selectorii de rangul 4 -->
+<h4>Selectorii de rangul 4</h4>
+<p>Fiecare <b>selector de element</b> și <b>pseudo-element</b> adaugă o unitate la rangul 4.</p>
+<article>
+  <h1>Lorem ipsum dolor sit amet</h1>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+    veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+    cumque fuga facere labore quo id necessitatibus quaerat rerum.
+  </p>
+  <a href="">Citeşte mai mult...</a>
+</article>
+
+<!-- Selectorii de rangul 3 -->
+<h4>Selectorii de rangul 3</h4>
+<p>Fiecare <b>selector de clasă</b>, <b>atribut</b> și <b>pseudo-clasă</b> adaugă o unitate la rangul 3.
+</p>
+<article class="post">
+  <h1 class="post-title">Lorem ipsum dolor sit amet</h1>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+    veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+    cumque fuga facere labore quo id necessitatibus quaerat rerum.
+  </p>
+  <a href="" class="post-link">Citeşte mai mult...</a>
+</article>
+
+<!-- Selectorii de rangul 2 -->
+<h3>Selectorii de rangul 2</h3>
+<p>Fiecare <b>selector de ID</b> adaugă o unitate la rangul 2.
+  <article class="post">
+    <h1 class="post-title" id="title">Lorem ipsum dolor sit amet</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+      veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+      cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a href="" class="post-link">Citeşte mai mult...</a>
+  </article>
+</p>
+  <!-- Selectorii de rangul 1 -->
+  <h3>Selectorii de rangul 1</h3>
+<p>Stilurile de tip <b>inline</b> adaugă o unitate la rangul 1, au specificitate cea mai mare și nu pot fi redefinite prin CSS.</p>
+<!-- Specificitatea acestui stil - 1 0 0 0 -->
+<p style="color: green;">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+  veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+  cumque fuga facere labore quo id necessitatibus quaerat rerum.
+</p>
+
+<!-- Aceeași specificitate -->
+<h3>Aceeași specificitate</h3>
+<p>Dacă specificitatea este aceeași, câștigă regula plasată mai jos din cod.
+</p>
+
+</body>
+</html>
